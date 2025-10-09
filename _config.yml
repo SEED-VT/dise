@@ -4,8 +4,8 @@
 title: "FSE 2026 Workshop: Data Intensive Software Development"
 description: "A forum at FSE 2026 for advancing trustworthy, data-intensive software engineering."
 lang: en
-url: ""
-baseurl: ""
+url: "https://seed-vt.github.io"
+baseurl: "/disd"
 
 theme: minima
 
