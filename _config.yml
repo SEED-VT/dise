@@ -1,0 +1,29 @@
+# Jekyll configuration for the DISD workshop site
+# https://jekyllrb.com/docs/configuration/
+
+title: "FSE 2026 Workshop: Data Intensive Software Development"
+description: "A forum at FSE 2026 for advancing trustworthy, data-intensive software engineering."
+lang: en
+url: ""
+baseurl: ""
+
+theme: minima
+
+header_pages:
+  - index.md
+
+minima:
+  skin: classic
+  social_links:
+    - platform: email
+      user: disd-organizers@example.com
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: "assets/css"
+      type: ""
+    values:
+      layout: null
