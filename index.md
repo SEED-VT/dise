@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Data Intensive Software Development Workshop
+title: International Workshop on Data Intensive Software Engineering
 permalink: /
 ---
 
 <section class="hero">
   <div class="hero__content">
     <p class="hero__eyebrow">ACM FSE 2026 Workshop</p>
-    <h1>Data Intensive Software Development (DISD)</h1>
+    <h1>International Workshop on Data Intensive Software Engineering (DISE)</h1>
     <p class="hero__lead">A one-day gathering for researchers and practitioners shaping trustworthy, AI-enabled, data-intensive software engineering.</p>
     <a class="hero__cta" href="#call-for-papers">Call for Participation</a>
   </div>
