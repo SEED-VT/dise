@@ -166,9 +166,9 @@ permalink: /
         </div>
       </li>
       <li>
-        <img class="people__avatar" src="{{ '/assets/img/organizer-placeholder.svg' | relative_url }}" alt="Dr. Yintong Huo" />
+        <img class="people__avatar" src="{{ '/assets/img/organizer-placeholder.svg' | relative_url }}" alt="Prof. Yintong Huo" />
         <div class="people__info">
-          <p class="people__name">Dr. Yintong Huo</p>
+          <p class="people__name">Prof. Yintong Huo</p>
           <p class="people__affiliation">Singapore Management University</p>
           <a class="people__email" href="mailto:ythuo@smu.edu.sg">ythuo@smu.edu.sg</a>
         </div>
