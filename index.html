@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PET-VA2025</title>
+  <title>DISE 2025</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
@@ -51,234 +51,280 @@
 </head>
 <body>
 
-  <!-- Navigation (Optional) -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">PET-VA2025</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+      <a class="navbar-brand fw-bold" href="#">DISE 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#format">Format</a></li>
+          <li class="nav-item"><a class="nav-link" href="#working-groups">Breakout Themes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#call-for-papers">Call for Papers</a></li>
           <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#speakers">Keynote Speakers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sponsor">Sponsor</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="overview">
+  <section class="hero" id="top">
     <div class="container">
-      <h1 class="display-5 fw-bold">PET-VA2025</h1>
+      <p class="text-uppercase text-muted mb-2" style="letter-spacing: .08em;">ACM FSE 2026 Workshop</p>
+      <h1 class="display-5 fw-bold">International Workshop on Data Intensive Software Engineering (DISE)</h1>
       <p class="lead">
-        2025 Workshop on Privacy-Enhancing Technologies (PET-VA)
+        A one-day gathering for researchers and practitioners shaping trustworthy, AI-enabled, data-intensive software engineering.
       </p>
-      <p>
-        <strong>Dates:</strong> Thursday, May 8, 2025<br>
-        <strong>Time:</strong> 11:00 AM -  03:00 PM<br>
-        <strong>Location:</strong> Virginia Tech, Blacksburg (Torgersen Hall - Room 1100) and (Virtually via Zoom)
-      </p>
-      <hr>
-      <p  style="text-align: left;"">
-        This workshop is designed to unite researchers from the Commonwealth of Virginia who are interested in exploring both the privacy implications of online applications and the development and implementation of privacy-enhancing technologies (PET) for diverse user segments. By showcasing past work and fostering discussions on future directions, the event provides a unique forum for building new interdisciplinary partnerships and sparking innovative collaborations. The workshop will cover topics ranging from emerging methods to privacy-enhancing technologies to large-scale privacy and security measurements. This event is open to all researchers and students within the CCI network as well as the broader privacy and security research community.
-        We will bring together experts from diverse disciplines to explore interdisciplinary approaches to PIA research. Key topics include:
-      </p>
-      
-      <ul style="text-align: left;">
-        <li>Privacy Implications in Online Applications (covering websites, mobile apps, smart devices, AR/VR, etc.)</li>
-        <li>Privacy Implications for Users with Disabilities</li>
-        <li>Large-scale Measurements for Security and Privacy</li>
-        <li>AI Language Technologies For Transparent Human-Computer Interactions</li>
-      </ul>
-      
-      <p style="text-align: left;">
-        This in-person workshop will take place at Virginia Tech – Torgersen Hall (Room 1100) on May 8th, 2025. Virtual attendance is also welcome. Interested participants can register at this <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjek-FCoh-I6tBhK4iwTIyrdVUNzhGNks3OUdHQkI3MUEzTUdETkY1RVU1QS4u">Registration Link</a>. The program will feature keynote presentations, talks by faculty and students, and breakout discussion sessions. Unlike traditional conferences, the workshop will focus on exploring understudied aspects of user privacy protection from the perspectives of various stakeholders, covering human factors, application development, and the broader ecosystem.
-        Registration is free, reflecting our commitment to inclusivity and knowledge-sharing. Lunch will be provided. We look forward to your participation and hope you will join us in shaping the future of privacy-enhancing technologies and measurement methods.        
-      </p>
+      <a class="btn btn-primary mt-2" href="#call-for-papers">Call for Participation</a>
     </div>
   </section>
 
-  <!-- Workshop at a Glance
-  <section class="container mt-5">
-    <h2 class="section-title">Workshop at a Glance</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <h5>Key Topics</h5>
-        <ul>
-          <li>CPS Security & Privacy</li>
-          <li>Smart Cities</li>
-          <li>Healthcare Applications</li>
-          <li>Industrial IoT</li>
-          <li>Education & Curriculum</li>
-        </ul>
+  <!-- Overview -->
+  <section class="container mt-5" id="overview">
+    <h2 class="section-title">Workshop Overview</h2>
+
+    <div class="card p-4 shadow-sm">
+      <p>
+        Modern software systems are becoming increasingly data-intensive. They process massive quantities of data and also produce
+        large-scale, machine-generated data, such as traces and telemetry, which is used for runtime monitoring, log analysis,
+        debugging, and testing. These analytical pipelines are performance-critical, and their behavior is highly dependent on the
+        scale and content of the data they process.
+      </p>
+
+      <p>
+        To thrive at this scale, software organizations need intelligent AI agents that can not only process the data but also
+        reason about it within the context of the software. Integrating AI-driven, data-informed feedback loops is essential for
+        autonomous software operations and context-aware guidance to developers. Achieving trustworthy AI-native software engineering
+        demands addressing challenges that directly influence the robustness, reliability, and trustworthiness of data-intensive systems.
+      </p>
+
+      <h3 class="mt-4">Key Challenges</h3>
+      <p>Trustworthy AI-enabled software engineering faces several reinforcing challenges in data-intensive environments:</p>
+      <ul>
+        <li><strong>Data-dependent uncertainty.</strong> The dynamic nature of large-scale, machine-generated data complicates comprehensive testing and debugging, and agentic approaches can amplify diagnosis uncertainty.</li>
+        <li><strong>Massive scale.</strong> Operational data overwhelms traditional analysis, demanding systems-level optimization for storage, tracing, and monitoring where critical behaviors manifest only at production scale.</li>
+        <li><strong>Stringent latency requirements.</strong> Real-time or near real-time expectations leave little room for offline analysis; long-running workloads make techniques like fuzzing difficult to apply at scale.</li>
+        <li><strong>Robustness under evolving conditions.</strong> Shifting data distributions and infrastructure conditions require AI techniques that remain stable despite drift, adversarial inputs, and noisy telemetry.</li>
+      </ul>
+
+      <h3 class="mt-4">Workshop Goals</h3>
+      <ul>
+        <li>Provide a forum for advancing software engineering research around data-intensive development, debugging, monitoring, and testing.</li>
+        <li>Highlight AI-driven, data-informed feedback loops that enable autonomous operations and context-aware guidance.</li>
+        <li>Launch a community consortium dedicated to curating and maintaining industry-scale synthetic datasets, benchmarks, and bug corpora.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section class="container mt-5" id="topics">
+    <h2 class="section-title">Topics of Interest</h2>
+    <div class="card p-4 shadow-sm">
+      <p>We invite discussions that explore fundamental ideas, practical solutions, and cross-domain innovations, including but not limited to:</p>
+      <ul>
+        <li>Data-intensive software testing, debugging, runtime monitoring, and log analytics</li>
+        <li>Semantics lifting from systems-generated data</li>
+        <li>Modelling application behavior via data-system coordination</li>
+        <li>AI, ML, and agentic approaches for monitoring, debugging, and testing systems-generated data</li>
+        <li>Algorithms and foundations for testing and debugging performance-critical systems</li>
+        <li>Benchmarks for testing, debugging, and analysis of systems-generated data</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Format -->
+  <section class="container mt-5" id="format">
+    <h2 class="section-title">Workshop Format</h2>
+    <p class="text-center">
+      The workshop is structured as an intensive one-day event that maximizes participation, knowledge exchange, and collaborative problem solving across the data-intensive software lifecycle.
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h5 fw-bold">Keynote Session (Morning 1)</h3>
+          <p>A visionary keynote anchors the day by outlining the major challenges and opportunities in data-intensive software engineering.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h5>Activities</h5>
-        <ul>
-          <li>Keynote Talks</li>
-          <li>Panel Discussions</li>
-          <li>Poster Sessions</li>
-          <li>Networking Events</li>
-        </ul>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h5 fw-bold">Paper Presentations (Morning 2)</h3>
+          <p>Accepted contributions—position ideas, research visions, and experience reports—are presented to surface concrete challenges and seed collaborative themes for the afternoon sessions.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h5>Important Dates</h5>
-        <ul>
-          <li>Abstract Submission: Nov 1, 2024</li>
-          <li>Notification: Nov 15, 2024</li>
-          <li>Final Paper: Dec 1, 2024</li>
-        </ul>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h5 fw-bold">Breakout Sessions (Afternoon 1)</h3>
+          <p>Participants divide into focused breakout rooms organized around four to five themes distilled from the morning program. Each group explores shared challenges, synergies, and actionable ideas, with an eye toward contributing to a community-driven article.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h5 fw-bold">Round-Table Synthesis (Afternoon 2)</h3>
+          <p>Groups reconvene to share outcomes, debate perspectives, and consolidate an outline for a living article on challenges and reflections in data-intensive software development.</p>
+        </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
+  <!-- Breakout Themes -->
+  <section class="container mt-5" id="working-groups">
+    <h2 class="section-title">Breakout Themes</h2>
+    <p class="text-center">Anticipated working groups emphasize sustained collaboration and tangible outputs:</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h6 fw-bold">Data-Intensive Benchmarks, Bugs, and Oracles</h3>
+          <p>Design and maintain realistic benchmarks, bug corpora, and domain-specific oracles that capture the diversity of contemporary data stacks.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h6 fw-bold">Runtime Monitoring for Data-Intensive Software</h3>
+          <p>Reinvent observability for heterogeneous, AI-augmented systems spanning telemetry pipelines, instrumentation, and fine-grained failure attribution.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h6 fw-bold">Debugging and Testing Data-Intensive Systems</h3>
+          <p>Address reproduction challenges, isolate root causes, and improve coverage in data-rich environments with emergent behaviors.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h6 fw-bold">Non-Functional Quality Attributes</h3>
+          <p>Ensure security, privacy, scalability, and resilience across shifting workloads and operating conditions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h6 fw-bold">AI Agents in Data-Intensive Pipelines</h3>
+          <p>Understand and standardize how AI agents consume and generate telemetry, including decision logs and monitoring strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call for Papers -->
+  <section class="container mt-5" id="call-for-papers">
+    <h2 class="section-title">Call for Papers</h2>
+
+    <div class="card p-4 shadow-sm">
+      <p>We welcome multiple submission types that reflect the maturity and goals of your contribution:</p>
+
+      <div class="row mt-3">
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-bold">Position Statements</h3>
+            <p class="mb-0">One to two pages highlighting early-stage ideas, industrial perspectives, or proposals that feed into the community report.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-bold">Short Papers</h3>
+            <p class="mb-0">Up to five pages presenting early visions, experience notes, or framework sketches that invite feedback.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-bold">Full Papers</h3>
+            <p class="mb-0">Six to ten pages documenting novel approaches, frameworks, or evaluations grounded in data-intensive software engineering.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div class="card p-3 h-100">
+            <h3 class="h6 fw-bold">arXiv Presentations</h3>
+            <p class="mb-0">Recent preprints offered for open discussion in a non-archival format to spark collaboration.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-3">
+        <strong>Submission notes:</strong> Submissions must be original at the time of submission, follow the ACM FSE 2026 format,
+        and be uploaded via HotCRP for double-blind review. At least one author of each accepted paper must register and present at the workshop.
+      </p>
+      <p>
+        All accepted papers, except for position statements and arXiv presentations, will appear in the FSE 2026 workshop proceedings by default.
+        Non-archival papers and position statements will be shared via the workshop website. Regardless of track, submissions must be unpublished elsewhere,
+        and at least one author must attend and present.
+      </p>
+      <p class="mb-0">
+        Authors of accepted position statements will collaborate after the workshop to synthesize a community article—targeting venues such as <em>IEEE Software</em>—
+        that captures shared insights and future directions.
+      </p>
+    </div>
+  </section>
 
   <!-- Organizers -->
   <section class="container mt-5" id="organizers">
     <h2 class="section-title">Organizers</h2>
-    <div class="row justify-content-center">
-      <!-- Example organizer -->
-      <div class="col-md-3 speaker-card">
-        <img src="gulzar.jpg" alt="Muhammad Ali Gulzar" class="profile-img mb-3">
-        <h5>Dr. Muhammad Ali Gulzar</h5>
-        <p>Assistant Professor</p>
-        <p>Virginia Tech</p>
-      </div>
-      <div class="col-md-3 speaker-card">
-        <img src="Eugenia.jpg" alt="Organizer Photo" class="profile-img mb-3">
-        <h5>Dr. Eugenia Rho</h5>
-        <p>Assistant Professor</p>
-        <p>Virginia Tech</p>
-      </div>
-      <div class="col-md-3 speaker-card">
-        <img src="hadi.jpg" alt="Organizer Photo" class="profile-img mb-3">
-        <h5>Abdul Haddi Amjad</h5>
-        <p>Ph.D. Candidate</p>
-        <p>Virginia Tech</p>
-      </div>
-      <!-- Add more organizers as needed -->
-    </div>
-  </section>
-  <!-- Invited Speakers -->
-  <section class="container mt-5" id="speakers">
-    <h2 class="section-title">Keynote Speakers</h2>
-    <div class="row">
-      <div class="col-md-6 speaker-card text-center">
-        <img src="franzi.jpg" alt="Speaker Photo" class="mb-3"
-             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
-        <h5>Dr. Franziska Roesner</h5>
-        <p>Professor at University of Washington</p>
-        <p>Keynote Speaker</p>
-      </div>
-      <div class="col-md-6 speaker-card text-center">
-        <img src="TJ.jpg" alt="Speaker Photo" class="mb-3"
-             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover;">
-        <h5>Dr. Taejoong (Tijay) Chung</h5>
-        <p>Assistant Professor at Virginia Tech</p>
-        <p>Keynote Speaker</p>
-      </div>
-    </div>
-  </section>
-  <!-- Workshop Schedule -->
-  <section class="container mt-5" id="schedule">
-    <h2 class="section-title">Workshop Schedule</h2>
-    <div class="table-responsive">
-      <table class="table table-bordered schedule-table">
-        <thead class="table-light">
-          <tr>
-            <th>Time</th>
-            <th>Session</th>
-            <th>Speaker/Panel</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>11:00 - 11:15</td>
-            <td>Opening Remarks</td>
-            <td>Organizing Committee</td>
-          </tr>
-          <tr>
-            <td>11:15 - 11:45</td>
-            <td>Keynote</td>
-            <td> <a href="https://taejoong.github.io/">Dr. Taejoong (Tijay) Chung</a>, Assistant Professor at Virginia Tech</td>
-          </tr>
-          <tr>
-            <td>11:45 - 12:00</td>
-            <td>Presentation</td>
-            <td>Lance Wilhelm</td>
-          </tr>
-          <!-- <tr>
-            <td>11:30 - 11:45</td>
-            <td>Student Presentation</td>
-            <td>XXXX</td>
-          </tr>
-          <tr>
-            <td>11:45 - 12:00</td>
-            <td>Student Presentation</td>
-            <td>XXXX</td>
-          </tr> -->
-          <tr>
-            <td>12:00 - 12:45</td>
-            <td>Keynote</td>
-            <td> <a href="https://www.franziroesner.com/">Dr. Franziska Roesner</a>, Professor at University of Washington</td>
-          </tr>
-          <tr>
-            <td>12:45 - 01:30</td>
-            <td>Break</td>
-            <td>Lunch and Discussion</td>
-          </tr>
-          <tr>
-            <td>01:30 - 02:15</td>
-            <td>Presentation</td>
-            <td>Yi Zheng, Xiaohan Ding, Muhammad Danish, Maha Sajid</td>
-          </tr>
-          <!-- <tr>
-            <td>01:45 - 02:00</td>
-            <td>Student Presentation</td>
-            <td>XXX</td>
-          </tr>
-          <tr>
-            <td>02:00 - 02:15</td>
-            <td>Student Presentation</td>
-            <td>XXX</td>
-          </tr> -->
-          <tr>
-            <td>02:15 - 02:30</td>
-            <td>Coffee Break</td>
-            <td>Discussion</td>
-          </tr>
-          <tr>
-            <td>02:30 - 03:00</td>
-            <td>Presentation</td>
-            <td>Yeana Bond, Zikai Alex Wen</td>
-          </tr>
-          <!-- Add more rows as needed -->
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <p class="text-center">
+      The workshop is coordinated by an international team with extensive experience organizing, chairing, and hosting major conferences and workshops.
+    </p>
 
-  <!-- Sponsor -->
-  <section class="container mt-5" id="sponsor">
-    <h2 class="section-title">Sponsor</h2>
-    <div class="text-center">
-      <!-- Replace with your sponsor logo -->
-      <img src="cci.png" alt="Sponsor Logo" style="max-width: 200px;">
-      <p class="mt-3">
-        Sponsored by the Commonwealth Cyber Initiative (CCI).
-      </p>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Lionel Briand" class="profile-img mb-3">
+        <h5>Prof. Lionel Briand</h5>
+        <p>Lero Centre, University College Dublin</p>
+        <p><a href="mailto:lbriand@uottawa.ca">lbriand@uottawa.ca</a></p>
+      </div>
+
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Tse-Hsun (Peter) Chen" class="profile-img mb-3">
+        <h5>Prof. Tse-Hsun (Peter) Chen</h5>
+        <p>Concordia University</p>
+        <p><a href="mailto:peterc@encs.concordia.ca">peterc@encs.concordia.ca</a></p>
+      </div>
+
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Muhammad Ali Gulzar" class="profile-img mb-3">
+        <h5>Prof. Muhammad Ali Gulzar</h5>
+        <p>Virginia Tech</p>
+        <p><a href="mailto:gulzar@cs.vt.edu">gulzar@cs.vt.edu</a></p>
+      </div>
+
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Yintong Huo" class="profile-img mb-3">
+        <h5>Prof. Yintong Huo</h5>
+        <p>Singapore Management University</p>
+        <p><a href="mailto:ythuo@smu.edu.sg">ythuo@smu.edu.sg</a></p>
+      </div>
+
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Miryung Kim" class="profile-img mb-3">
+        <h5>Prof. Miryung Kim</h5>
+        <p>UCLA</p>
+        <p><a href="mailto:miryung@cs.ucla.edu">miryung@cs.ucla.edu</a></p>
+      </div>
+
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Michael Lyu" class="profile-img mb-3">
+        <h5>Prof. Michael Lyu</h5>
+        <p>The Chinese University of Hong Kong</p>
+        <p><a href="mailto:lyu@cse.cuhk.edu.hk">lyu@cse.cuhk.edu.hk</a></p>
+      </div>
+
+      <div class="col-md-3 speaker-card">
+        <img src="organizer-placeholder.svg" alt="Prof. Weiyi Shang" class="profile-img mb-3">
+        <h5>Prof. Weiyi Shang</h5>
+        <p>University of Waterloo</p>
+        <p><a href="mailto:wshang@uwaterloo.ca">wshang@uwaterloo.ca</a></p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 PET-VA Workshop. All Rights Reserved.</p>
+      <p>&copy; 2026 DISE Workshop. All Rights Reserved.</p>
     </div>
   </footer>
 
