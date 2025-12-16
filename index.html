@@ -26,10 +26,13 @@
       font-weight: 700;
     }
     .profile-img {
-      max-width: 50%;
-      height: auto;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      object-fit: cover;
+      object-fit: cover;        /* crop image to fill circle */
+      object-position: center; /* center the face */
+      display: block;
+      margin: 0 auto;          /* center image horizontally */
     }
     .speaker-card {
       margin-bottom: 2rem;
