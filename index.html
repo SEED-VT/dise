@@ -105,8 +105,8 @@
     <div class="card p-4 shadow-sm">
       <p>
         Modern software systems are becoming increasingly data-intensive. They process massive quantities of data and also produce
-        large-scale, machine-generated data, such as traces and telemetry, which is used for runtime monitoring, log analysis,
-        debugging, and testing. These analytical pipelines are performance-critical, and their behavior is highly dependent on the
+        large-scale, machine-generated data, such as traces and telemetry, which is used for AI training, runtime monitoring, log analysis,
+        debugging, and testing. These analytical pipelines are integral to today's AI advacnements and are performance-critical, and their behavior is highly dependent on the
         scale and content of the data they process.
       </p>
 
@@ -124,6 +124,7 @@
         <li><strong>Massive scale.</strong> Operational data overwhelms traditional analysis, demanding systems-level optimization for storage, tracing, and monitoring where critical behaviors manifest only at production scale.</li>
         <li><strong>Stringent latency requirements.</strong> Real-time or near real-time expectations leave little room for offline analysis; long-running workloads make techniques like fuzzing difficult to apply at scale.</li>
         <li><strong>Robustness under evolving conditions.</strong> Shifting data distributions and infrastructure conditions require AI techniques that remain stable despite drift, adversarial inputs, and noisy telemetry.</li>
+        <li><strong>AI tailored workloads.</strong> The classical principles of correctness, validation, and scale do not hold when such data pipelines are utilized for crucial training data preparation and wrangling phases.</li>
       </ul>
 
       <h3 class="mt-4">Workshop Goals</h3>
@@ -142,6 +143,7 @@
       <p>We invite discussions that explore fundamental ideas, practical solutions, and cross-domain innovations, including but not limited to:</p>
       <ul>
         <li>Data-intensive software testing, debugging, runtime monitoring, and log analytics</li>
+        <li>Use of data-intensive software in AI training and inference phases</li>
         <li>Semantics lifting from systems-generated data</li>
         <li>Modelling application behavior via data-system coordination</li>
         <li>AI, ML, and agentic approaches for monitoring, debugging, and testing systems-generated data</li>
@@ -222,6 +224,13 @@
           <p>Understand and standardize how AI agents consume and generate telemetry, including decision logs and monitoring strategies.</p>
         </div>
       </div>
+        <div class="col-md-6 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <h3 class="h6 fw-bold">Data-Intensive Pipelines For AI</h3>
+          <p>Understand and standardize how data intensive software evolve for AI training and inference needs at scale</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -259,9 +268,18 @@
         </div>
       </div>
 
+   <div class="mt-4">
+      <p class="fw-semibold mb-2">Important Dates</p>
+      <ul class="list-unstyled mb-0">
+        <li><strong>Paper Submission Deadline:</strong> February 1, 2026</li>
+        <li><strong>Paper Notification:</strong> February 25, 2026</li>
+        <li><strong>Camera-Ready Deadline:</strong> April 2, 2026</li>
+        <li><strong>Early Registration Deadline:</strong> April 24, 2026</li>
+      </ul>
+    </div>
       <p class="mt-3">
         <strong>Submission notes:</strong> Submissions must be original at the time of submission, follow the ACM FSE 2026 format,
-        and be uploaded via HotCRP for double-blind review. At least one author of each accepted paper must register and present at the workshop.
+        and be uploaded via <a href="http://dise2026.hotcrp.com">HotCRP</a> for double-blind review. At least one author of each accepted paper must register and present at the workshop.
       </p>
       <p>
         All accepted papers, except for position statements and arXiv presentations, will appear in the FSE 2026 workshop proceedings by default.
