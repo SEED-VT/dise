@@ -67,7 +67,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
           <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
-          <li class="nav-item"><a class="nav-link" href="#format">Format</a></li>
+          <li class="nav-item"><a class="nav-link" href="#format">Program</a></li>
           <li class="nav-item"><a class="nav-link" href="#working-groups">Breakout Themes</a></li>
           <li class="nav-item"><a class="nav-link" href="#call-for-papers">Call for Papers</a></li>
           <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
@@ -107,153 +107,198 @@
   <section class="container mt-5" id="overview">
     <h2 class="section-title">Workshop Overview</h2>
 
-    <div class="card p-4 shadow-sm">
-      <p>
-        Modern software systems are becoming increasingly data-intensive. They process massive quantities of data and also produce
-        large-scale, machine-generated data, such as traces and telemetry, which is used for AI training, runtime monitoring, log analysis,
-        debugging, and testing. These analytical pipelines are integral to today's AI advancements and are performance-critical, and their behavior is highly dependent on the
-        scale and content of the data they process.
-      </p>
-
-      <p>
-        To thrive at this scale, software organizations need intelligent AI agents that can not only process the data but also
-        reason about it within the context of the software. Integrating AI-driven, data-informed feedback loops is essential for
-        autonomous software operations and context-aware guidance to developers. Achieving trustworthy AI-native software engineering
-        demands addressing challenges that directly influence the robustness, reliability, and trustworthiness of data-intensive systems.
-      </p>
-
-      <h3 class="mt-4">Key Challenges</h3>
-      <p>Trustworthy AI-enabled software engineering faces several reinforcing challenges in data-intensive environments:</p>
-      <ul>
-        <li><strong>Data-dependent uncertainty.</strong> The dynamic nature of large-scale, machine-generated data complicates comprehensive testing and debugging, and agentic approaches can amplify diagnosis uncertainty.</li>
-        <li><strong>Massive scale.</strong> Operational data overwhelms traditional analysis, demanding systems-level optimization for storage, tracing, and monitoring where critical behaviors manifest only at production scale.</li>
-        <li><strong>Stringent latency requirements.</strong> Real-time or near real-time expectations leave little room for offline analysis; long-running workloads make techniques like fuzzing difficult to apply at scale.</li>
-        <li><strong>Robustness under evolving conditions.</strong> Shifting data distributions and infrastructure conditions require AI techniques that remain stable despite drift, adversarial inputs, and noisy telemetry.</li>
-        <li><strong>AI tailored workloads.</strong> The classical principles of correctness, validation, and scale do not hold when such data pipelines are utilized for crucial training data preparation and wrangling phases.</li>
-      </ul>
-
-      <h3 class="mt-4">Workshop Goals</h3>
-      <ul>
-        <li>Provide a forum for advancing software engineering research around data-intensive development, debugging, monitoring, and testing.</li>
-        <li>Highlight AI-driven, data-informed feedback loops that enable autonomous operations and context-aware guidance.</li>
-        <li>Launch a community consortium dedicated to curating and maintaining industry-scale synthetic datasets, benchmarks, and bug corpora.</li>
-      </ul>
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Workshop Overview</h3>
+      </div>
+      <div class="card-body p-4">
+        <p>
+          Modern software systems are becoming increasingly data-intensive. They process massive quantities of data and also produce
+          large-scale, machine-generated data, such as traces and telemetry, which is used for AI training, runtime monitoring, log analysis,
+          debugging, and testing. These analytical pipelines are integral to today's AI advancements and are performance-critical, and their behavior is highly dependent on the
+          scale and content of the data they process.
+        </p>
+        <p>
+          To thrive at this scale, software organizations need intelligent AI agents that can not only process the data but also
+          reason about it within the context of the software. Integrating AI-driven, data-informed feedback loops is essential for
+          autonomous software operations and context-aware guidance to developers. Achieving trustworthy AI-native software engineering
+          demands addressing challenges that directly influence the robustness, reliability, and trustworthiness of data-intensive systems.
+        </p>
+        <h3 class="mt-4">Key Challenges</h3>
+        <p>Trustworthy AI-enabled software engineering faces several reinforcing challenges in data-intensive environments:</p>
+        <ul>
+          <li><strong>Data-dependent uncertainty.</strong> The dynamic nature of large-scale, machine-generated data complicates comprehensive testing and debugging, and agentic approaches can amplify diagnosis uncertainty.</li>
+          <li><strong>Massive scale.</strong> Operational data overwhelms traditional analysis, demanding systems-level optimization for storage, tracing, and monitoring where critical behaviors manifest only at production scale.</li>
+          <li><strong>Stringent latency requirements.</strong> Real-time or near real-time expectations leave little room for offline analysis; long-running workloads make techniques like fuzzing difficult to apply at scale.</li>
+          <li><strong>Robustness under evolving conditions.</strong> Shifting data distributions and infrastructure conditions require AI techniques that remain stable despite drift, adversarial inputs, and noisy telemetry.</li>
+          <li><strong>AI tailored workloads.</strong> The classical principles of correctness, validation, and scale do not hold when such data pipelines are utilized for crucial training data preparation and wrangling phases.</li>
+        </ul>
+        <h3 class="mt-4">Workshop Goals</h3>
+        <ul>
+          <li>Provide a forum for advancing software engineering research around data-intensive development, debugging, monitoring, and testing.</li>
+          <li>Highlight AI-driven, data-informed feedback loops that enable autonomous operations and context-aware guidance.</li>
+          <li>Launch a community consortium dedicated to curating and maintaining industry-scale synthetic datasets, benchmarks, and bug corpora.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Topics -->
   <section class="container mt-5" id="topics">
     <h2 class="section-title">Topics of Interest</h2>
-    <div class="card p-4 shadow-sm">
-      <p>We invite discussions that explore fundamental ideas, practical solutions, and cross-domain innovations, including but not limited to:</p>
-      <ul>
-        <li>Data-intensive software testing, debugging, runtime monitoring, and log analytics</li>
-        <li>Use of data-intensive software in AI training and inference phases</li>
-        <li>Semantics lifting from systems-generated data</li>
-        <li>Modelling application behavior via data-system coordination</li>
-        <li>AI, ML, and agentic approaches for monitoring, debugging, and testing systems-generated data</li>
-        <li>Algorithms and foundations for testing and debugging performance-critical systems</li>
-        <li>Benchmarks for testing, debugging, and analysis of systems-generated data</li>
-      </ul>
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Topics of Interest</h3>
+      </div>
+      <div class="card-body p-4">
+        <p>We invite discussions that explore fundamental ideas, practical solutions, and cross-domain innovations, including but not limited to:</p>
+        <ul>
+          <li>Data-intensive software testing, debugging, runtime monitoring, and log analytics</li>
+          <li>Use of data-intensive software in AI training and inference phases</li>
+          <li>Semantics lifting from systems-generated data</li>
+          <li>Modelling application behavior via data-system coordination</li>
+          <li>AI, ML, and agentic approaches for monitoring, debugging, and testing systems-generated data</li>
+          <li>Algorithms and foundations for testing and debugging performance-critical systems</li>
+          <li>Benchmarks for testing, debugging, and analysis of systems-generated data</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Format -->
   <section class="container mt-5" id="format">
-    <h2 class="section-title">Workshop Format</h2>
-    <p class="text-center">
-      The workshop is structured as an intensive one-day event that maximizes participation, knowledge exchange, and collaborative problem solving across the data-intensive software lifecycle.
-    </p>
+    <h2 class="section-title">Workshop Program</h2>
 
-    <div class="row mt-4">
+    <!-- Morning Session I -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Morning Session I <small class="fw-normal">(8:45 – 10:30)</small></h3>
+      </div>
+      <div class="card-body">
+        <h4 class="h6 fw-bold text-primary">Keynote I</h4>
+        <p><strong>Dr. Dongmei Zhang</strong><br>Distinguished Scientist and Deputy Managing Director, Microsoft Research Asia</p>
 
-      <!-- Morning 1 -->
-      <div class="col-12 mb-3">
-        <h4 class="fw-semibold">Morning I</h4>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Keynote Session I</h3>
-          <p>Chao Peng, Principal Research Scientist at ByteDance</p>
-        </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Paper Presentations &amp; Invited Talk</h3>
-          <p>Short papers, poster, and an invited talk presenting early-stage ideas, research visions, and experience reports to surface concrete challenges and seed collaborative themes.</p>
-        </div>
-      </div>
+        <hr>
 
-      <!-- Morning 2 -->
-      <div class="col-12 mb-3 mt-2">
-        <h4 class="fw-semibold">Morning II</h4>
+        <h4 class="h6 fw-bold text-primary">Paper Presentations &amp; Invited Talk</h4>
+        <p class="fw-semibold mb-1 mt-3">Short Papers</p>
+        <ol>
+          <li class="mb-2">
+            <strong>A Holistic Risk Calculus for Microservice Systems using Multi-Source Signal Fusion</strong><br>
+            <small class="text-muted">Shakthi Weerasinghe, Tomas Cerny (University of Arizona)</small>
+          </li>
+          <li class="mb-2">
+            <strong>Cloud Intelligence/AIOps 2.0: Knowledge-Anchored Agentic AIOps</strong><br>
+            <small class="text-muted">Dongmei Zhang, Qingwei Lin, Si Qin, Liqun Li, Lianbin Chi, Dawei Song, Biao Cheng, Chaoyun Zhang, Yingnong Dang, Samia Khalid, Saravan Rajmohan, Sitaram Lanka (Microsoft)</small>
+          </li>
+          <li class="mb-2">
+            <strong>Freezing the Crime Scene: A State Snapshot Paradigm for Reproducible Agentic SRE Evaluation</strong><br>
+            <small class="text-muted">Guangba Yu, Yilun Wang, Michael R. Lyu (The Chinese University of Hong Kong)</small>
+          </li>
+        </ol>
+        <p class="fw-semibold mb-1 mt-3">Poster</p>
+        <ol>
+          <li>
+            <strong>Why Property-Based Testing is Necessary for Data Intensive Scalable Computing</strong><br>
+            <small class="text-muted">Yaoxuan Wu, Ingrid Lee, Miryung Kim (UCLA); Ahmad Humayun, Muhammad Ali Gulzar (Virginia Tech)</small>
+          </li>
+        </ol>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Panel</h3>
-          <p><em>What are the research challenges in this space that we as a community should be working on?</em></p>
-          <p class="mb-0"><strong>Panelists:</strong> Lionel Briand, Michael Lyu, Chao Peng<br><strong>Moderator:</strong> Miryung Kim</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Breakout Session</h3>
-          <p>Participants divide into focused breakout rooms organized around themes distilled from the morning program, exploring shared challenges, synergies, and actionable ideas.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Summary &amp; Discussion</h3>
-          <p>Each breakout group briefly shares key takeaways for collective reflection.</p>
-        </div>
-      </div>
-
-      <!-- Lunch -->
-      <div class="col-12 mb-3 mt-2">
-        <h4 class="fw-semibold">Lunch</h4>
-      </div>
-
-      <!-- Afternoon 1 -->
-      <div class="col-12 mb-3 mt-2">
-        <h4 class="fw-semibold">Afternoon I</h4>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Keynote Session II</h3>
-          <p>TBD</p>
-        </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Long Paper Presentations</h3>
-          <p>Full research papers documenting novel approaches, frameworks, or evaluations grounded in data-intensive software engineering.</p>
-        </div>
-      </div>
-
-      <!-- Afternoon 2 -->
-      <div class="col-12 mb-3 mt-2">
-        <h4 class="fw-semibold">Afternoon II</h4>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Breakout Sessions</h3>
-          <p>Participants re-group into up to three focused rooms, continuing to explore shared challenges and actionable ideas with an eye toward a community-driven article.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Panel &amp; Group Summaries</h3>
-          <p>Panelists and breakout group leads reconvene to share outcomes, debate perspectives, and consolidate key insights.</p>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h5 fw-bold">Collective Writing</h3>
-          <p>Groups contribute to a shared writing template covering challenges in data-intensive software engineering, the current landscape, and a roadmap for future research directions.</p>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Coffee Break -->
+    <div class="card shadow-sm mb-4 bg-light">
+      <div class="card-body py-2 text-center fw-semibold">Coffee Break (10:30 – 11:00)</div>
+    </div>
+
+    <!-- Morning Session II -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Morning Session II <small class="fw-normal">(11:00 – 12:30)</small></h3>
+      </div>
+      <div class="card-body">
+        <h4 class="h6 fw-bold text-primary">Overview of Breakout Group Topics + Panel</h4>
+        <p class="fst-italic">What are the research challenges in this space that we as a community should be working on?</p>
+        <p><strong>Panelists:</strong> Lionel Briand, Michael Lyu, Dongmei Zhang, Chao Peng<br>
+        <strong>Moderator:</strong> Miryung Kim</p>
+
+        <hr>
+
+        <h4 class="h6 fw-bold text-primary">Breakout Session</h4>
+        <p>Participants divide into focused breakout rooms organized around themes distilled from the morning program, exploring shared challenges, synergies, and actionable ideas.</p>
+
+        <hr>
+
+        <h4 class="h6 fw-bold text-primary">Summary and Discussion</h4>
+        <p class="mb-0">Each breakout group shares key takeaways for collective reflection.</p>
+      </div>
+    </div>
+
+    <!-- Lunch -->
+    <div class="card shadow-sm mb-4 bg-light">
+      <div class="card-body py-2 text-center fw-semibold">Lunch (12:30 – 14:00)</div>
+    </div>
+
+    <!-- Afternoon Session I -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Afternoon Session I <small class="fw-normal">(14:00 – 15:30)</small></h3>
+      </div>
+      <div class="card-body">
+        <h4 class="h6 fw-bold text-primary">Keynote II</h4>
+        <p><strong>Chao Peng</strong><br>Principal Research Scientist, ByteDance; Program Co-Chair, AIware</p>
+
+        <hr>
+
+        <h4 class="h6 fw-bold text-primary">Long Paper Presentations</h4>
+        <ol>
+          <li class="mb-2">
+            <strong>PerfGen: Automated Performance Benchmark Generation for Big Data Analytics</strong><br>
+            <small class="text-muted">Jiyuan Wang (Tulane); Jason Teoh, Miryung Kim (UCLA); Muhammad Ali Gulzar (Virginia Tech); Qian Zhang (UC Riverside)</small>
+          </li>
+          <li class="mb-2">
+            <strong>AI-NativeBench: An Open-Source White-Box Agentic Benchmark Suite for AI-Native Systems</strong><br>
+            <small class="text-muted">Zirui Wang (Sun Yat-sen University); Guangba Yu, Michael R. Lyu (The Chinese University of Hong Kong)</small>
+          </li>
+          <li class="mb-2">
+            <strong>GADM-Oracle: A Domain-Adaptive Oracle for Detecting "Data Bugs" in Enterprise Data Stacks</strong><br>
+            <small class="text-muted">Shakthi Weerasinghe, Amr S. Abdelfattah, Tomas Cerny (University of Arizona)</small>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Coffee Break -->
+    <div class="card shadow-sm mb-4 bg-light">
+      <div class="card-body py-2 text-center fw-semibold">Coffee Break (15:30 – 16:00)</div>
+    </div>
+
+    <!-- Afternoon Session II -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Afternoon Session II <small class="fw-normal">(16:00 – 17:30)</small></h3>
+      </div>
+      <div class="card-body">
+        <h4 class="h6 fw-bold text-primary">Re-group</h4>
+        <p>Participants identify where they would like to continue their discussions.</p>
+
+        <hr>
+
+        <h4 class="h6 fw-bold text-primary">Breakout Sessions</h4>
+        <p>Participants divide into focused groups continuing to explore shared challenges and actionable ideas with an eye toward a community-driven article.</p>
+
+        <hr>
+
+        <h4 class="h6 fw-bold text-primary">Panel + Summary</h4>
+        <p>Panelists and breakout group leads reconvene to share outcomes and consolidate key insights.</p>
+
+        <hr>
+
+        <h4 class="h6 fw-bold text-primary">Collective Writing</h4>
+        <p class="mb-0">Groups contribute to a shared writing template covering challenges in data-intensive software engineering, the current landscape, and a roadmap for future research directions.</p>
+      </div>
+    </div>
+
   </section>
 
   <!-- Breakout Themes -->
@@ -263,39 +308,63 @@
 
     <div class="row mt-4">
       <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h6 fw-bold">Data-Intensive Benchmarks, Bugs, and Oracles</h3>
-          <p>Design and maintain realistic benchmarks, bug corpora, and domain-specific oracles that capture the diversity of contemporary data stacks.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h6 fw-bold mb-0">Data-Intensive Benchmarks, Bugs, and Oracles</h3>
+          </div>
+          <div class="card-body">
+            <p>Design and maintain realistic benchmarks, bug corpora, and domain-specific oracles that capture the diversity of contemporary data stacks.</p>
+          </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h6 fw-bold">Runtime Monitoring for Data-Intensive Software</h3>
-          <p>Reinvent observability for heterogeneous, AI-augmented systems spanning telemetry pipelines, instrumentation, and fine-grained failure attribution.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h6 fw-bold mb-0">Runtime Monitoring for Data-Intensive Software</h3>
+          </div>
+          <div class="card-body">
+            <p>Reinvent observability for heterogeneous, AI-augmented systems spanning telemetry pipelines, instrumentation, and fine-grained failure attribution.</p>
+          </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h6 fw-bold">Debugging and Testing Data-Intensive Systems</h3>
-          <p>Address reproduction challenges, isolate root causes, and improve coverage in data-rich environments with emergent behaviors.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h6 fw-bold mb-0">Debugging and Testing Data-Intensive Systems</h3>
+          </div>
+          <div class="card-body">
+            <p>Address reproduction challenges, isolate root causes, and improve coverage in data-rich environments with emergent behaviors.</p>
+          </div>
         </div>
       </div>
       <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h6 fw-bold">Non-Functional Quality Attributes</h3>
-          <p>Ensure security, privacy, scalability, and resilience across shifting workloads and operating conditions.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h6 fw-bold mb-0">Non-Functional Quality Attributes</h3>
+          </div>
+          <div class="card-body">
+            <p>Ensure security, privacy, scalability, and resilience across shifting workloads and operating conditions.</p>
+          </div>
         </div>
       </div>
       <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h6 fw-bold">AI Agents in Data-Intensive Pipelines</h3>
-          <p>Understand and standardize how AI agents consume and generate telemetry, including decision logs and monitoring strategies.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h6 fw-bold mb-0">AI Agents in Data-Intensive Pipelines</h3>
+          </div>
+          <div class="card-body">
+            <p>Understand and standardize how AI agents consume and generate telemetry, including decision logs and monitoring strategies.</p>
+          </div>
         </div>
       </div>
         <div class="col-md-6 mb-4">
-        <div class="card p-4 h-100 shadow-sm">
-          <h3 class="h6 fw-bold">Data-Intensive Pipelines For AI</h3>
-          <p>Understand and standardize how data-intensive software evolves for AI training and inference needs at scale</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h6 fw-bold mb-0">Data-Intensive Pipelines For AI</h3>
+          </div>
+          <div class="card-body">
+            <p>Understand and standardize how data-intensive software evolves for AI training and inference needs at scale</p>
+          </div>
         </div>
       </div>
 
@@ -311,27 +380,43 @@
 
       <div class="row mt-3">
         <div class="col-md-6 col-lg-3 mb-3">
-          <div class="card p-3 h-100">
-            <h3 class="h6 fw-bold">Position Statements</h3>
-            <p class="mb-0">Up to 2 pages, including references highlighting early-stage ideas, industrial perspectives, or proposals that feed into the community report.</p>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h3 class="h6 fw-bold mb-0">Position Statements</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0">Up to 2 pages, including references highlighting early-stage ideas, industrial perspectives, or proposals that feed into the community report.</p>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-3">
-          <div class="card p-3 h-100">
-            <h3 class="h6 fw-bold">Short Papers</h3>
-            <p class="mb-0">Up to 4 pages, plus 1 additional page for references presenting early visions, experience notes, or framework sketches that invite feedback.</p>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h3 class="h6 fw-bold mb-0">Short Papers</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0">Up to 4 pages, plus 1 additional page for references presenting early visions, experience notes, or framework sketches that invite feedback.</p>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-3">
-          <div class="card p-3 h-100">
-            <h3 class="h6 fw-bold">Full Papers</h3>
-            <p class="mb-0">Up to 10 pages, plus 2 additional pages for references documenting novel approaches, frameworks, or evaluations grounded in data-intensive software engineering.</p>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h3 class="h6 fw-bold mb-0">Full Papers</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0">Up to 10 pages, plus 2 additional pages for references documenting novel approaches, frameworks, or evaluations grounded in data-intensive software engineering.</p>
+            </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-3">
-          <div class="card p-3 h-100">
-            <h3 class="h6 fw-bold">arXiv Presentations</h3>
-            <p class="mb-0">Recent preprints offered for open discussion in a non-archival format to spark collaboration.</p>
+          <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h3 class="h6 fw-bold mb-0">arXiv Presentations</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0">Recent preprints offered for open discussion in a non-archival format to spark collaboration.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -424,7 +509,11 @@
   <!-- PC -->
    <section class="container mt-5" id="pc">
     <h2 class="section-title">Program Committee</h2>
-    <div class="card p-4 shadow-sm">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h3 class="h5 fw-bold mb-0">Program Committee</h3>
+      </div>
+      <div class="card-body p-4">
       <ul>
         <li>Hamid Bagheri, University of Nebraska-Lincoln</li>
         <li>Lionel Briand, Lero Centre, University College Dublin</li>
@@ -440,6 +529,7 @@
         <li>Weiyi Shang, University of Waterloo</li>
         <li>Yintong Huo, Singapore Management University</li>
       </ul>
+      </div>
     </div>
   </section>
 
